@@ -9,7 +9,7 @@ services:
       - JUPYTER_TOKEN=${JUPYTER_TOKEN:?set JUPYTER_TOKEN in .env}
     volumes:
       - ./work:/workspace
-    shm_size: "8gb"
+    shm_size: "16gb"
     ulimits:
       memlock: -1
       stack: 67108864
